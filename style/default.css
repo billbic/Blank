@@ -92,10 +92,10 @@ button:hover {
   color: var(--color-muted);
 }
 
-.card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-md);
-  box-shadow: var(--shadow-sm);
+.pointer {
+  cursor: pointer;
+}
+
+.hidden{
+    display:none;
 }
