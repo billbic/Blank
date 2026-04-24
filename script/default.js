@@ -11,7 +11,8 @@ $(document).ready(function () {
     console.log("DOM ready - default.js loaded");
 
     ErrorHandler.init(window.location.hostname === "localhost");
-    throw new Error("Test Error");
+    
+    //throw new Error("Test Error");
 
   } catch (error) {
     ErrorHandler.handle(e, "$(document).ready");
