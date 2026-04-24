@@ -1,0 +1,101 @@
+/* =========================
+   Base Theme Variables
+========================= */
+:root {
+  /* Colors */
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+  --color-primary: #3b82f6;
+  --color-secondary: #22c55e;
+  --color-text: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color-border: #334155;
+  --color-danger: #ef4444;
+
+  /* Typography */
+  --font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-sm: 14px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 10px rgba(0,0,0,0.3);
+
+  /* Layout */
+  --max-width: 1200px;
+}
+
+/* =========================
+   Base Reset
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* =========================
+   Common Elements
+========================= */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md);
+}
+
+/* =========================
+   Utility Classes
+========================= */
+.text-muted {
+  color: var(--color-muted);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
